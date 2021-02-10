@@ -1,0 +1,34 @@
+{
+  "name": "quake-log-parser",
+  "version": "1.0.0",
+  "description": "Parser de logs para Quake, retornando as estatisticas de cada jogo escrito em NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "istanbul cover node_modules/jasmine/bin/jasmine.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/jjgomez2k/quake-log-parser.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Hapi.js",
+    "Jasmine.js"
+  ],
+  "author": "Juan Jose Gomez Martinuzzo <jjgomez2k@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/jjgomez2k/quake-log-parser/issues"
+  },
+  "homepage": "https://gitlab.com/jjgomez2k/quake-log-parser#README",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "hapi": "^16.6.2",
+    "nodemon": "^1.12.1"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.8.0"
+  }
+}
