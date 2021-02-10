@@ -42,9 +42,9 @@ describe('Game', () => {
 
     beforeEach(() => {
       player1 = new Player(lines[2])
-      player1.username = 'Paulo H. da Silva'
+      player1.username = 'Juan J. Gomez M.'
       player2 = new Player(lines[3])
-      player2.username = 'Bárbara Lopes Milani'
+      player2.username = 'Joao Silva'
     })
 
     it('Should be able to add new players to game', () => {
@@ -64,8 +64,8 @@ describe('Game', () => {
     })
 
     it('Should returns players kills list', () => {
-      const emptyPlayersKills = { 'Paulo H. da Silva': 0, 'Bárbara Lopes Milani': 0 }
-      const playersKills = { 'Paulo H. da Silva': 1, 'Bárbara Lopes Milani': 1 }
+      const emptyPlayersKills = { 'Juan J. Gomez M.': 0, 'Joao Silva': 0 }
+      const playersKills = { 'Juan J. Gomez M.': 1, 'Joao Silva': 1 }
       game.newPlayer(player1)
       game.newPlayer(player2)
       expect(game.playersKills()).toEqual(emptyPlayersKills)
@@ -78,10 +78,10 @@ describe('Game', () => {
       expect(game.playersNames().length).toEqual(0)
       game.newPlayer(player1)
       expect(game.playersNames().length).toEqual(1)
-      expect(game.playersNames()).toEqual(['Paulo H. da Silva'])
+      expect(game.playersNames()).toEqual(['Juan J. Gomez M.'])
       game.newPlayer(player2)
       expect(game.playersNames().length).toEqual(2)
-      expect(game.playersNames()).toEqual(['Paulo H. da Silva', 'Bárbara Lopes Milani'])
+      expect(game.playersNames()).toEqual(['Juan J. Gomez M.', 'Joao Silva'])
     })
   })
 

@@ -84,7 +84,7 @@ TESTE DE RETORNO
 
 Retorna uma partida específica a partir do ID. 
 
-**POST** ```/api/v1/games/{id}```
+**GET** ```/api/v1/games/{id}```
 
 **200** ```OK```
 

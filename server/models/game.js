@@ -51,7 +51,7 @@ class Game {
 
   /**
    * Returns the players names of the game
-   * @example ['Paulo H. da Silva']
+   * @example ['Juan J. Gomez M.']
    * @return {array} The players names
    */
   playersNames () {
@@ -64,7 +64,7 @@ class Game {
 
   /**
    * Returns the number of kills by each player
-   * @example { 'Paulo H. da Silva': 1 }
+   * @example { 'Juan J. Gomez M.': 1 }
    * @return {Object} The players kills
    */
   playersKills () {
